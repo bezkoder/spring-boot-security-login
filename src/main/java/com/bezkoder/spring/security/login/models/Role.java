@@ -1,6 +1,6 @@
 package com.bezkoder.spring.security.login.models;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "roles")

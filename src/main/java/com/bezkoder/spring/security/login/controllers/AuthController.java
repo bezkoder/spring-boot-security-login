@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -35,6 +35,8 @@ import com.bezkoder.spring.security.login.security.jwt.JwtUtils;
 import com.bezkoder.spring.security.login.security.services.UserDetailsImpl;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
+//for Angular Client (withCredentials)
+//@CrossOrigin(origins = "http://localhost:8081", maxAge = 3600, allowCredentials="true")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
